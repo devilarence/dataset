@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Listings</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo">
+            <h5>YOUWORK</h5>
+        </div>
+        <nav class="main-nav">
+            <a href="#" class="active">Find Jobs</a>
+            <a href="#">Find Talent</a>
+            <a href="#">Upload Job</a>
+            <div class="dropdown">
+                <a href="#" class="dropdown-toggle">More</a>
+                <div class="dropdown-menu">
+                    <a href="#">About Us</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Help</a>
+                </div>
+            </div>
+        </nav>
+        <div class="user-info">
+            <span>DEVILA LOURENCE</span>
+
+        </div>
+    </header>
+    <section class="hero">
+        <h1>Find Your Dream Job Here</h1>
+        <p class="hero-subtitle">Search thousands of job opportunities tailored to your skills and preferences.</p>
+        <div class="search-bar">
+            <input type="text" placeholder="Job title, keyword, or company" aria-label="Job title or keyword">
+            <input type="text" placeholder="City, state, or country" aria-label="Location">
+            <button class="btn-primary">Search</button>
+        </div>
+    </section>
+    <main class="content">
+        <aside class="filters">
+            <h3>Filter by Job Type</h3>
+            <ul>
+                <li><label><input type="checkbox" aria-label="Full Time"> Full Time</label></li>
+                <li><label><input type="checkbox" aria-label="Part Time"> Part Time</label></li>
+                <li><label><input type="checkbox" aria-label="Internship"> Internship</label></li>
+                <li><label><input type="checkbox" aria-label="Project Work"> Project Work</label></li>
+                <li><label><input type="checkbox" aria-label="Volunteering"> Volunteering</label></li>
+            </ul>
+            <h3>Filter by Salary Range</h3>
+            <label for="salary-range">Salary Range:</label>
+            <input type="range" id="salary-range" min="1000" max="20000" step="500" title="Select salary range">
+            <h3>Filter by Experience Level</h3>
+            <ul>
+                <li><label><input type="checkbox" aria-label="Entry Level"> Entry Level</label></li>
+                <li><label><input type="checkbox" aria-label="Intermediate"> Intermediate</label></li>
+                <li><label><input type="checkbox" aria-label="Expert"> Expert</label></li>
+            </ul>
+        </aside>
+        <section class="job-listings">
+            <h2>Recommended Jobs</h2>
+            <div class="job-cards">
+                <div class="job-card">
+                    <div class="job-card-header">
+                        <h3>Product Designer</h3>
+                        <span>Netflix</span>
+                    </div>
+                    <p>Doing the right thing for investors is what we’re all about at Vanguard...</p>
+                    <div class="tags">
+                        <span>Entry Level</span>
+                        <span>Full Time</span>
+                    </div>
+                    <p class="salary">$250/hr</p>
+                    <button class="btn-secondary">View Details</button>
+                </div>
+                <div class="job-card">
+                    <div class="job-card-header">
+                        <h3>Software Engineer</h3>
+                        <span>Google</span>
+                    </div>
+                    <p>We are looking for a Software Engineer to join our team...</p>
+                    <div class="tags">
+                        <span>Intermediate</span>
+                        <span>Full Time</span>
+                    </div>
+                    <p class="salary">$300/hr</p>
+                    <button class="btn-secondary">View Details</button>
+                
+            </div>
+                <div class="job-card">
+                    <div class="job-card-header">
+                        <h3>Data Analyst</h3>
+                        <span>Amazon</span>
+                    </div>
+                    <p>We are seeking a Data Analyst to help us make data-driven decisions...</p>
+                    <div class="tags">
+                        <span>Entry Level</span>
+                        <span>Part Time</span>
+                    </div>
+                    <p class="salary">$150/hr</p>
+                    <button class="btn-secondary">View Details</button>
+                </div>
+        </section>
+    </main>
+</body>
+</html>
